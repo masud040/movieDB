@@ -1,6 +1,22 @@
 import Image from "next/image";
 
-const MovieDetails = () => {
+const MovieDetails = ({ movieData }) => {
+  const {
+    adult,
+    backdrop_path,
+    genre_ids,
+    id,
+    original_language,
+    original_title,
+    overview,
+    popularity,
+    poster_path,
+    release_date,
+    title,
+    video,
+    vote_average,
+    vote_count,
+  } = movieData || {};
   return (
     <section>
       <div>

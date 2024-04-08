@@ -1,4 +1,4 @@
-import { getDataFile } from "../[lang]/dictionaries/dictionaries";
+import { getDataFile } from "@/lib/getDataFile";
 import MovieCard from "./MovieCard";
 
 const MovieList = async () => {

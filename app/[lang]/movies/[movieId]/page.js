@@ -1,8 +1,11 @@
 import MovieDetails from "@/app/components/MovieDetails";
-const MovieDetailsPage = () => {
+import { getSingleMovie } from "@/lib/getSingleMovie";
+const MovieDetailsPage = async ({ params: { movieId } }) => {
+  const movie = await getSingleMovie(movieId);
+
   return (
     <>
-      <MovieDetails />
+      <MovieDetails movieData={movie} />
     </>
   );
 };
