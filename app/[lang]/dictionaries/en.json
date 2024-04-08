@@ -1,14 +1,14 @@
 {
   "trending": "Trending",
-  "new-releases": "New Releases",
-  "comming-soon": "Comming Soon",
+  "new_releases": "New Releases",
+  "coming_soon": "Coming Soon",
   "favourites": "Favourites",
-  "watch-later": "Watch Later",
+  "watch_later": "Watch Later",
   "details": "Details",
-  "release-date": "Release Date",
-  "average-vote": "Average Vote",
-  "vote-count": "Vote Count",
+  "release_date": "Release Date",
+  "average_vote": "Average Vote",
+  "vote_count": "Vote Count",
   "popularity": "Popularity",
-  "stream-hd": "Stream In HD",
-  "download-hd": "Download In HD"
+  "stream_hd": "Stream In HD",
+  "download_hd": "Download In HD"
 }

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-const Sidebar = () => {
+import { getDictionary } from "../[lang]/dictionaries/dictionaries";
+const Sidebar = async ({ lang }) => {
+  const dict = await getDictionary(lang);
+
   return (
     <aside>
       <ul className="space-y-2">
@@ -10,7 +13,7 @@ const Sidebar = () => {
             href="#"
           >
             <Image src="/trending.svg" width="24" height="24" alt="" />
-            <span>Trending</span>
+            <span>{dict.trending}</span>
           </Link>
         </li>
         <li>
@@ -19,7 +22,7 @@ const Sidebar = () => {
             href="#"
           >
             <Image src="/newRelease.svg" width="24" height="24" alt="" />
-            <span>New Releases</span>
+            <span>{dict.new_releases}</span>
           </Link>
         </li>
         <li>
@@ -28,7 +31,7 @@ const Sidebar = () => {
             href="#"
           >
             <Image src="/commingSoon.svg" width="24" height="24" alt="" />
-            <span>Coming Soon</span>
+            <span>{dict.coming_soon}</span>
           </Link>
         </li>
         <li>
@@ -37,7 +40,7 @@ const Sidebar = () => {
             href="#"
           >
             <Image src="/favourite.svg" width="24" height="24" alt="" />
-            <span>Favourites</span>
+            <span>{dict.favourites}</span>
           </Link>
         </li>
         <li>
@@ -46,7 +49,7 @@ const Sidebar = () => {
             href="#"
           >
             <Image src="/watchLater.svg" width="24" height="24" alt="" />
-            <span>Watch Later</span>
+            <span>{dict.watch_later}</span>
           </Link>
         </li>
       </ul>

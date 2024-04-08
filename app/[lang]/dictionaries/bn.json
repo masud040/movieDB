@@ -1,14 +1,14 @@
 {
   "trending": "চলমান",
-  "new-releases": "নতুন রিলিজ",
-  "comming-soon": "শীঘ্রই আসছে",
+  "new_releases": "নতুন রিলিজ",
+  "coming_soon": "শীঘ্রই আসছে",
   "favourites": "প্রিয়",
-  "watch-later": "পরে দেখুন",
+  "watch_later": "পরে দেখুন",
   "details": "বিস্তারিত",
-  "release-date": "মুক্তির তারিখ",
-  "average-vote": "গড় ভোট",
-  "vote-count": "ভোট গণনা",
+  "release_date": "মুক্তির তারিখ",
+  "average_vote": "গড় ভোট",
+  "vote_count": "ভোট গণনা",
   "popularity": "জনপ্রিয়তা",
-  "stream-hd": "HD এ স্ট্রিম",
-  "download-hd": "HD এ ডাউনলোড করুন"
+  "stream_hd": "HD এ স্ট্রিম",
+  "download_hd": "HD এ ডাউনলোড করুন"
 }
