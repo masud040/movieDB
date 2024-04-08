@@ -1,5 +1,6 @@
 import { getAllMovies, getSingleMovie } from "@/lib/utils";
 import { NextResponse } from "next/server";
+
 export async function GET(request, { params: { id } }) {
   const movie = await getSingleMovie(id);
   if (movie) {
@@ -17,4 +18,16 @@ export async function DELETE(request, { params: { id } }) {
   const movieToDelete = allMovie[movieIndex];
   allMovie.splice(movieIndex, 1);
   return NextResponse.json(movieToDelete);
+}
+
+export async function PATCH(request, { params: { id } }) {
+  const movieTitle = await request.json();
+  const allMovie = await getAllMovies();
+  const movieIndex = allMovie.findIndex((movie) => movie.id === parseInt(id));
+  if (movieIndex === -1) {
+    return NextResponse.json({ message: "This movie is not found." });
+  }
+  allMovie[movieIndex].title = movieTitle.title;
+
+  return NextResponse.json(allMovie[movieIndex]);
 }
