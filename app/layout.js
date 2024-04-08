@@ -8,8 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-body font-sora dark:text-white text-dark ">
+      <body className="bg-white dark:bg-body font-sora dark:text-white text-dark">
         {children}
+        <div id="modal-root" />
       </body>
     </html>
   );
