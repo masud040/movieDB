@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, detailsLocale }) => {
   const { id, poster_path, title } = movie || {};
 
   return (
@@ -27,7 +27,7 @@ const MovieCard = ({ movie }) => {
           href={`/movies/${id}`}
         >
           <Image src="/tag.svg" alt="" width={20} height={20} />
-          <span>Details</span>
+          <span>{detailsLocale}</span>
         </Link>
       </figcaption>
     </figure>
