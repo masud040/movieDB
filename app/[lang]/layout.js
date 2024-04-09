@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 
 const MovieLayout = ({ Component, params, children, modal }) => {
   return (
-    <div className="bg-white dark:bg-body font-sora dark:text-white text-dark">
+    <div>
       {modal}
       <Header />
       <main>
@@ -12,7 +12,6 @@ const MovieLayout = ({ Component, params, children, modal }) => {
           {children}
         </div>
       </main>{" "}
-      <div id="modal-root" />
     </div>
   );
 };

@@ -1,15 +1,10 @@
 import Modal from "@/app/components/Modal";
 import MovieDetails from "@/app/components/MovieDetails";
-import { getAllMovies, getSingleMovie } from "@/lib/utils";
+import { getSingleMovie } from "@/lib/utils";
 
-export async function generateStaticParams() {
-  const movies = await getAllMovies();
-  return movies.map((movie) => ({
-    moiveId: movie.id,
-  }));
-}
 const MovieModal = async ({ params: { movieId, lang } }) => {
   const movie = await getSingleMovie(movieId);
+  console.log("I'm rendering on server");
   return (
     <>
       <Modal>
