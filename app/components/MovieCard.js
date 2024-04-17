@@ -4,18 +4,18 @@ const MovieCard = ({ movie, detailsLocale }) => {
   const { id, poster_path, title } = movie || {};
 
   return (
-    <figure class="p-4 border shadow-sm border-black/10 dark:border-white/10 rounded-xl">
+    <figure className="p-4 border shadow-sm border-black/10 dark:border-white/10 rounded-xl">
       <Image
-        class="object-cover w-full"
+        className="object-cover w-full"
         src={poster_path}
         width={500}
         height={500}
         alt=""
       />
-      <figcaption class="pt-4">
-        <h3 class="mb-1 text-xl">{title}</h3>
-        <p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
-        <div class="flex items-center mb-5 space-x-1">
+      <figcaption className="pt-4">
+        <h3 className="mb-1 text-xl">{title}</h3>
+        <p className="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+        <div className="flex items-center mb-5 space-x-1">
           <Image src="/star.svg" width="14" height="14" alt="" />
           <Image src="/star.svg" width="14" height="14" alt="" />
           <Image src="/star.svg" width="14" height="14" alt="" />
@@ -23,7 +23,7 @@ const MovieCard = ({ movie, detailsLocale }) => {
           <Image src="/star.svg" width="14" height="14" alt="" />
         </div>
         <Link
-          class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+          className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
           href={`/movies/${id}`}
         >
           <Image src="/tag.svg" alt="" width={20} height={20} />

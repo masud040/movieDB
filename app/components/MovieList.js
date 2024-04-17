@@ -8,7 +8,7 @@ const MovieList = async ({ lang }) => {
 
   return (
     <div className="content">
-      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
         {movies &&
           movies?.results?.map((movie) => (
             <MovieCard

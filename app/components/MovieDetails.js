@@ -23,7 +23,7 @@ const MovieDetails = async ({ movieData, lang }) => {
     <section>
       <div>
         <Image
-          class="w-full object-cover max-h-[300px] lg:max-h-[500px]"
+          className="w-full object-cover max-h-[300px] lg:max-h-[500px]"
           src={poster_path}
           width={700}
           height={700}
@@ -31,14 +31,14 @@ const MovieDetails = async ({ movieData, lang }) => {
         />
       </div>
 
-      <div class="grid grid-cols-12 py-12 gap-8">
-        <div class="col-span-2">
+      <div className="grid grid-cols-12 gap-8 py-12">
+        <div className="col-span-2">
           <Image src={backdrop_path} alt="" width={200} height={200} />
         </div>
-        <div class="col-span-8">
-          <h2 class="font-bold text-slate-300 text-2xl">{title}</h2>
-          <p class="my-2 text-slate-400 italic">{overview}</p>
-          <ul class="text-slate-300 space-y-2 my-8">
+        <div className="col-span-8">
+          <h2 className="text-2xl font-bold text-slate-300">{title}</h2>
+          <p className="my-2 italic text-slate-400">{overview}</p>
+          <ul className="my-8 space-y-2 text-slate-300">
             <li>
               {dict.release_date} : {release_date}
             </li>
@@ -53,11 +53,11 @@ const MovieDetails = async ({ movieData, lang }) => {
             </li>
           </ul>
         </div>
-        <div class="col-span-2 space-y-4">
-          <button class="py-2 w-full bg-primary font-medium text-slate-800 rounded-md">
+        <div className="col-span-2 space-y-4">
+          <button className="w-full py-2 font-medium rounded-md bg-primary text-slate-800">
             {dict.stream_hd}
           </button>
-          <button class="py-2 w-full bg-primary font-medium text-slate-800 rounded-md">
+          <button className="w-full py-2 font-medium rounded-md bg-primary text-slate-800">
             {dict.download_hd}
           </button>
         </div>

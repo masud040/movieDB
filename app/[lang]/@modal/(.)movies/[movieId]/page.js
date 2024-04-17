@@ -4,7 +4,7 @@ import { getSingleMovie } from "@/lib/utils";
 
 const MovieModal = async ({ params: { movieId, lang } }) => {
   const movie = await getSingleMovie(movieId);
-  console.log("I'm rendering on server");
+
   return (
     <>
       <Modal>
